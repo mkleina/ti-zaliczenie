@@ -1,0 +1,42 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona na zaliczenie</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link type="text/css" media="screen" rel="stylesheet" href="{{root}}assets/css/responsive-tables.css" />
+  </head>
+  <body>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <ul class="menu" data-dropdown-menu>
+          <li class="menu-text">Strona na zaliczenie</li>
+          <li><a href="/">Strona główna</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/article.html">Przykład Article.md</a></li>
+          <li><a href="/table.html">Responsywna tabelka - plan lekcji</a></li>
+          <li><a href="/map.html">Responsywna mapa Google</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="/yslow.html" class="button">Test YSlow</a></li>
+        </ul>
+      </div>
+    </div>
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

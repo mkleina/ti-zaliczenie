@@ -1,0 +1,9 @@
+{
+  "firebase": "zaliczenie-mkleina",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
